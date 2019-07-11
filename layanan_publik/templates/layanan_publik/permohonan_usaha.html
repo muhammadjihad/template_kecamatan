@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block addStyles %}
+    <link rel="stylesheet" href="{% static 'css/layanan_publik/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/layanan_publik/permohonan_usaha.css' %}">
+{% endblock addStyles %}
+
+
+{% block konten1 %}
+    <div class="bg-primary">
+        <div class="container form-permohonan-usaha">
+            <form action="" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{form_permohonan_usaha|crispy}}
+                <button class="btn btn-primary">kirim</button>
+            </form>
+            <div class="container text-right">
+                <a href="{% url 'layanan_publik:index' %}"><p><- Kembali ke Layanan Utama</p></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-primary">
+        <div class="container permohonan_usaha text-center">
+            <div class="container mb-3">
+                <span class="badge bg-info">Cari nama perusahaan di sini</span>
+            </div>
+            <div class="container">
+                <div class="input-group mb-3">
+                    <input onchange="demo()" type="text" class="form-control" placeholder="Masukkan Nama .." aria-label="Recipient's username" aria-describedby="basic-addon2" id="search-nama">
+                    <div class="input-group-append">
+                        <button onsubmit="demo()" class="btn btn-outline-secondary" type="button">
+                            <img src="{% static 'img/magnifier.svg' %}" width="20px" height="20px" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr class='bg-warning'>
+                    <th scope="col">Nama</th>
+                    <th scope="col">NIK</th>
+                    <th scope="col">Nama Usaha</th>
+                    <th scope="col">Deskripsi Usaha</th>
+                    <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody>  
+                    {% for izinUsaha in daftarIzinUsaha  %}
+                    <tr>
+                        <th scope="row">{{izinUsaha.nama_pemohon}}</th>
+                        <td>{{izinUsaha.nomor_induk}}</td>
+                        <td>{{izinUsaha.nama_usaha}}</td>
+                        <td>{{izinUsaha.deskripsi_usaha}}</td>
+                        {% if not izinUsaha.verifikasi %}
+                            <td class='bg-danger text-white'>Belum Diverifikasi</td>
+                        {% else %}
+                            <td class='bg-success text-white'>Sudah Diverifikasi</td>
+                        {% endif %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock konten1 %}
+
+
+{% block addScripts %}
+    <script>
+        function demo(){
+            window.location.href = 'http://localhost:8000/layanan/permohonan-usaha/?nama_pemohon='+document.getElementById('search-nama').value
+        }
+    </script>
+{% endblock addScripts %}
+    

@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+{% block konten1 %}
+    <div class="perizinan-acara-form">
+        <div class="container">
+            <form method="POST">
+                {% csrf_token %}
+                {{form_perizinan_acara|crispy}}
+                <button class="btn btn-primary" type="submit">Kirim</button>
+            </form>
+        </div>
+    </div>
+    <div class="perizinan-acara-list">
+        <div class="container mt-5">
+            
+                <table class="table text-center">
+                        <thead>
+                            <tr class='bg-warning'>
+                                <th scope="col">Nama Kegiatan</th>
+                                <th scope="col">Lokasi Pelaksanaan</th>
+                                <th scope="col">Tanggal Pelaksanaan</th>
+                                <th scope="col">Waktu Kegiatan</th>
+                                <th scope="col">Penanggung Jawab</th>
+                                <th scope="col">Diketahui Kecamatan</th>
+                            </tr>
+                        </thead>
+                        <tbody>  
+                            {% for acara in listAcara  %}
+                            <tr>
+                                <td>{{acara.nama_kegiatan}}</td>
+                                <td>{{acara.tempat_kegiatan}}</td>
+                                <td>{{acara.tanggal_kegiatan}}</td>
+                                <td>{{acara.waktu_kegiatan}}</td>
+                                <th scope="row">{{acara.nama_ketuapanitia}}</th>
+                                
+                                {% if acara.approve_kecamatan %}
+                                    <td class="bg-success text-white">Sudah</td>
+                                {% else %}
+                                    <td class="bg-danger text-white">Belum</td>
+                                {% endif %}
+                                    
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                
+        </div>
+    </div>
+{% endblock konten1 %}
+    

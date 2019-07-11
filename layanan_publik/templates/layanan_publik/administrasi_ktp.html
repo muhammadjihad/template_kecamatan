@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+
+{% block addStyles %}
+    <link rel="stylesheet" href="{% static 'css/layanan_publik/administrasiKTP.css' %}">
+{% endblock addStyles %}
+    
+
+{% block konten1 %}
+
+    <!-- Bagian Form -->
+    <div class="administrasi-ktp">
+        <div class="container">
+            <div class="container text-center">
+                <span class="badge bg-warning text-white">
+                    Isi Borang
+                </span>
+            </div>
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{form_administrasi_KTP|crispy}}
+                <button class="btn btn-primary">Kirim</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bagian Data -->
+    <div class="list-orang">
+        <div class="container text-center">
+        <div class="back text-right">
+                <a href="{% url 'layanan_publik:administrasi' %}">
+                    <p><- Kembali ke Menu Administrasi</p>
+                </a>
+            </div>
+            <div class="container">
+                <span class="badge bg-warning text-white">
+                    Data Penduduk
+                </span>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr class='bg-warning'>
+                        <th scope="col">Nama</th>
+                        <th scope="col">Kota Kelahiran</th>
+                        <th scope="col">Tanggal Lahir</th>
+                        <th scope="col">Status Perkawinan</th>
+                        <th scope="col">Agama</th>
+                    </tr>
+                </thead>
+                <tbody>  
+                    {% for orang in list_orang  %}
+                    <tr>
+                        <td>{{orang.nama}}</td>
+                        <td>{{orang.tempat_lahir}}</td>
+                        <td>{{orang.tanggal_lahir}}</td>
+                        <td>{{orang.get_status_perkawinan_display}}</td>
+                        <th scope="row">{{orang.get_agama_display}}</th>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock konten1 %}

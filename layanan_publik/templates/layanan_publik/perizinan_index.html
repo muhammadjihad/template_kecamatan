@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block addStyles %}
+    <link rel="stylesheet" href="{% static 'css/layanan_publik/administrasi.css' %}">
+{% endblock addStyles %}
+    
+
+
+{% block konten1 %}
+<div class="menu-administrasi">
+        <div class="container text-center">
+            <div class="container judul">
+                <span class="badge bg-warning mt-5">
+                    Layanan Administrasi
+                </span>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="{% url 'layanan_publik:permohonanUsaha' %}">
+                        <div class="card">
+                            <div class="bagian2">
+                                <img src="{% static 'img/money.png' %}" alt="" class="icon-menu">
+                            </div>
+                            <h5>Perizinan Usaha</h5>
+                        </div>
+                    </a>
+                    <a href="{% url 'layanan_publik:perizinanAcara' %}">
+                        <div class="card">
+                            <div class="bagian2">
+                                <img src="{% static 'img/company.svg' %}" alt="" class="icon-menu">
+                            </div>
+                            <h5>Izin Mendirikan Bangunan</h5>
+                        </div>
+                    </a>
+                    <a href="{% url 'layanan_publik:administrasiKTP' %}">
+                        <div class="card">
+                            <div class="bagian2">
+                                <img src="{% static 'img/noise.svg' %}" alt="" class="icon-menu">
+                            </div>
+                            <h5>Izin Gangguan</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="{% url 'layanan_publik:perizinanAcara' %}">
+                        <div class="card">
+                            <div class="bagian2">
+                                <img src="{% static 'img/stage.svg' %}" alt="" class="icon-menu">
+                            </div>
+                            <h5>Perizinan Acara</h5>
+                        </div>
+                    </a>
+                    <a href="{% url 'layanan_publik:administrasiKTP' %}">
+                        <div class="card">
+                            <div class="bagian2">
+                                <img src="{% static 'img/death.svg' %}" alt="" class="icon-menu">
+                            </div>
+                            <h5>Izin Pemakaman</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="#">
+                        <div class="card">
+                            <div class="bagian2">
+                                <img src="{% static 'img/billboard.svg' %}" alt="" class="icon-menu">
+                            </div>
+                            <h5>Izin Reklame</h5>
+                        </div>
+                    </a> 
+                    <a href="{% url 'layanan_publik:administrasiKTP' %}">
+                        <div class="card">
+                            <div class="bagian2">
+                                <img src="{% static 'img/sink.svg' %}" alt="" class="icon-menu">
+                            </div>
+                            <h5>Izin Oprit</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="container back text-right">
+                <a href="{% url 'layanan_publik:index' %}"><button class="btn btn-danger mt-3">Kembali</button></a>
+            </div>
+        </div>
+    </div>
+{% endblock konten1 %}
+    

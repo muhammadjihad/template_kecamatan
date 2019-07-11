@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    {% include 'snippets/styles.html' %}
+    
+    {% block addStyles %}
+        
+    {% endblock addStyles %}
+    <link rel="icon" type="image/png" href="{% static 'img/logobandung.png' %}">
+    <link rel="stylesheet" href="{% static 'css/basestyle.css' %}">
+    <title>Official Website Kecamatan Sumur Bandung</title>
+</head>
+<body>
+
+    {% comment %} Navbar {% endcomment %}
+    {% include 'snippets/navbar.html' %}
+    
+    {% block konten1 %}
+        
+    {% endblock konten1 %}
+        
+
+    {% include 'snippets/scripts.html' %}
+
+    
+    {% block addScripts %}
+        
+    {% endblock addScripts %}
+        
+</body>
+</html>

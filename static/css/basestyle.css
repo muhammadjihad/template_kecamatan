@@ -1,0 +1,157 @@
+a{
+    color: blue;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+div.kata-sambutan{
+    background-image: url(http://127.0.0.1:8000/static/img/kantorkecamatan.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    padding:12px;
+}
+    .kata-sambutan div.pembukaan{
+    padding:7px;
+    background-color:whitesmoke;
+    border-radius: 8px;
+    }
+
+div.live-video{
+    background-color:lightgray;
+    padding:15px;
+}
+    .live-video div.comment-core{
+        background-color:white;
+        border-radius: 5px;
+        height:250px;
+        overflow: auto;
+        padding:10px;
+        font-family: 'Arial'
+    }
+    .live-video img.foto-camat{
+        width:200px;
+    }
+    div.video-box{
+        border:4px;
+        border-radius: 5px;
+        background-color: #1a52c6;
+        padding:5px;
+    }
+    span.badge{
+        background-color:blue;
+        padding:7px;
+        border-radius: 5px;
+        color:white;
+        box-shadow:1px 1px 3px black
+    }
+
+nav{
+    background:#1a52c6;
+}
+    img.logo{
+    width:65px;
+    height: 65px;
+}
+    div.menu-kanan li{
+        direction: ltr
+    }
+
+.bagian1{
+    overflow: hidden;
+}
+    /* .bagian1 .kantor-depan img{
+        height:250px;
+    } */
+
+    .bagian1 .kantor-depan div.container.berita-card{
+    
+    }
+    .bagian1 .berita-list{
+        margin:5px;
+        max-height:325px;
+        overflow:auto;
+        box-shadow: 1px 1px 8px #888888;
+        padding: 8px;
+    }
+
+    .bagian1 h6{
+            display: inline-block;
+            background-color: blue;
+            color:white;
+            padding:5px;
+            padding-right: 10px;
+            padding-left: 10px;
+            border-radius: 8px;
+            box-shadow: 1px 1px 5px black;
+        }
+
+.bagian2{
+    padding:15px;
+    background-color: lightgrey;
+}
+        .bagian2 .menu-layanan{
+            margin:5px;
+            margin-top:10px;
+            border:3px lightgrey;
+            border-radius: 7px;
+            box-shadow: 1px 1px .5px .5px grey;
+        }
+        .bagian2 .menu-layanan:hover{
+            box-shadow: 1px 1px 4px 4px white;
+            cursor: pointer;
+        }
+            .bagian2 .menu-layanan:hover span{
+                box-shadow: 1px 1px 4px 4px white
+            }
+            .bagian2 .menu-layanan span.menu-layanan-badge{
+                width:40px;
+                position: absolute;
+                top: 0;
+                left: -8px;
+                color:white;
+                transform: rotate(325deg)
+            }
+        .bagian2 img.icon-menu{
+                width:50px;
+                height: 50px;
+            }
+            .bagian2 .menu-layanan img.foto-menu{
+                width:100%;
+            }
+            .bagian2 .menu-layanan h6{
+                color:blue;
+            }
+
+.bagian3{
+}
+    .bagian3 .menu-info div.card{
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
+
+    .bagian3 div.bagian2{
+        background-color:lightgoldenrodyellow;
+    }
+    .bagian3 div.card:hover{
+        box-shadow: 1px 1px 4px 4px lightgoldenrodyellow;
+        cursor: pointer;
+    }
+        .bagian3 div.card h5{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+h5{
+    margin-bottom: 0;
+}
+
+
+.bagianfooter{
+    background-color:#1a52c6;
+    padding:15px;
+}
+    .bagianfooter div.peta{
+        padding:2px;
+        background-color:whitesmoke;
+    }

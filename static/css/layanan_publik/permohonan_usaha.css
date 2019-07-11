@@ -1,0 +1,23 @@
+div.container.form-permohonan-usaha{
+    background-color:whitesmoke;
+    padding: 15px;
+    border-radius: 8px;
+    position: relative;
+    top:50px;
+}
+
+div.container.permohonan_usaha{
+    background-color:rgb(243, 243, 243);
+    padding: 15px;
+    border-radius: 8px;
+    position: relative;
+    top:65px;
+}
+    div.izin-usaha{
+        background-color:#007bff;
+        margin:10px;
+        padding:5px;
+        border-radius: 8px;
+        text-align: center;
+        color: white;
+    }

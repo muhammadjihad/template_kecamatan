@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block addStyles %}
+    <link rel="stylesheet" href="{% static 'css/layanan_publik/administrasi.css' %}">
+{% endblock addStyles %}
+    
+
+{% block konten1 %}
+    <div class="menu-administrasi">
+        <div class="container text-center">
+            <div class="container judul">
+                <span class="badge bg-warning mt-5">
+                    Layanan Administrasi
+                </span>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="{% url 'layanan_publik:administrasiKTP' %}">
+                        <div class="card">
+                            <div class="bagian2">
+                                <img src="{% static 'img/teamwork.png' %}" alt="" class="icon-menu">
+                            </div>
+                            <h5>Pelayanan KTP</h5>
+                        </div>
+                    </a>
+                    <a href="{% url 'layanan_publik:administrasiKTP' %}">
+                            <div class="card">
+                                <div class="bagian2">
+                                    <img src="{% static 'img/teamwork.png' %}" alt="" class="icon-menu">
+                                </div>
+                                <h5>Surat Keterangan Menikah</h5>
+                            </div>
+                        </a>
+                        <a href="{% url 'layanan_publik:administrasiKTP' %}">
+                            <div class="card">
+                                <div class="bagian2">
+                                    <img src="{% static 'img/teamwork.png' %}" alt="" class="icon-menu">
+                                </div>
+                                <h5>Surat Keterangan Duda/Janda</h5>
+                            </div>
+                        </a>
+                        <a href="{% url 'layanan_publik:administrasiKTP' %}">
+                            <div class="card">
+                                <div class="bagian2">
+                                    <img src="{% static 'img/teamwork.png' %}" alt="" class="icon-menu">
+                                </div>
+                                <h5>Surat Keterangan Belum Menikah</h5>
+                            </div>
+                        </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="">
+                        <div class="card">
+                            <div class="bagian2">
+                                <img src="{% static 'img/teamwork.png' %}" alt="" class="icon-menu">
+                            </div>
+                            <h5>Pelayanan Kartu Keluarga</h5>
+                        </div>
+                    </a>
+                    <a href="{% url 'layanan_publik:administrasiKTP' %}">
+                        <div class="card">
+                            <div class="bagian2">
+                                <img src="{% static 'img/teamwork.png' %}" alt="" class="icon-menu">
+                            </div>
+                            <h5>Surat Keterangan Ahli Waris</h5>
+                        </div>
+                    </a>
+                    <a href="{% url 'layanan_publik:administrasiKTP' %}">
+                        <div class="card">
+                            <div class="bagian2">
+                                <img src="{% static 'img/teamwork.png' %}" alt="" class="icon-menu">
+                            </div>
+                            <h5>Surat Keterangan Hibah</h5>
+                        </div>
+                    </a>
+                    <a href="{% url 'layanan_publik:administrasiKTP' %}">
+                        <div class="card">
+                            <div class="bagian2">
+                                <img src="{% static 'img/teamwork.png' %}" alt="" class="icon-menu">
+                            </div>
+                            <h5>Surat Keterangan Gaib</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="">
+                        <div class="card">
+                            <div class="bagian2">
+                                <img src="{% static 'img/teamwork.png' %}" alt="" class="icon-menu">
+                            </div>
+                            <h5>Pembuatan SKCK</h5>
+                        </div>
+                    </a>
+                    <a href="{% url 'layanan_publik:administrasiKTP' %}">
+                        <div class="card">
+                            <div class="bagian2">
+                                <img src="{% static 'img/teamwork.png' %}" alt="" class="icon-menu">
+                            </div>
+                            <h5>Rekomendasi Santuan Kematian</h5>
+                        </div>
+                    </a>
+                    <a href="{% url 'layanan_publik:administrasiKTP' %}">
+                        <div class="card">
+                            <div class="bagian2">
+                                <img src="{% static 'img/teamwork.png' %}" alt="" class="icon-menu">
+                            </div>
+                            <h5>Surat Keterangan Tidak Mampu</h5>
+                        </div>
+                    </a>
+                    <a href="{% url 'layanan_publik:administrasiKTP' %}">
+                        <div class="card">
+                            <div class="bagian2">
+                                <img src="{% static 'img/teamwork.png' %}" alt="" class="icon-menu">
+                            </div>
+                            <h5>Koordinasi RASKIN</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="container back text-right">
+                <a href="{% url 'layanan_publik:index' %}"><button class="btn btn-danger mt-3">Kembali</button></a>
+            </div>
+        </div>
+    </div>
+{% endblock konten1 %}
+    

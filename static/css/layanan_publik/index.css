@@ -1,0 +1,18 @@
+html{
+    background-color:#007bff;
+}
+div.card{
+    margin-top:25px;
+    padding:5px;
+    box-shadow: 1px 1px 3px 3px black;
+}
+div.card:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 3px 3px white;
+}
+    div.card:hover div.bagian2{
+        background-color:lightcoral;
+    }
+    .card div.bagian2{
+        background-color:lightblue;
+    }

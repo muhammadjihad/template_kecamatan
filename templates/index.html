@@ -1,0 +1,395 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block addStyles %}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+{% endblock addStyles %}
+    
+
+{% block konten1 %}
+    {% include 'snippets/layanan_public.html' %}
+
+    {% comment %} Bagian Kata Sambutan {% endcomment %}
+    <div class="kata-sambutan text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <img src={% static "img/fotocamat.png" %} class="foto-camat"/>
+                    <div class="container mt-1">
+                        <span class="badge">Dra. Hj. SRI MAYANINGSIH, M.Si</span>
+                    </div>
+                    <div class="container mt-2">
+                        <span class="badge">Camat Kecamatan Sumur Bandung</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="container">
+                        <div class="container">
+                        <span class="badge">Wilujeung Sumping</span>
+                        </div>
+                        <hr>
+                        <div class="container pembukaan">
+                            <p>Kecamatan Sumur Bandung adalah salah satu kecamatan tertua di Kota Bandung. Batas wilayah dan jumlah kelurahan di Kecamatan Sumur Bandung pada awalnya ditetapkan berdasarkan pada PP Nomor 16 Tahun 1987 tentang perubahan Batas Wilayah Kotamadya Daerah Tingkat Bandung dan Kabupaten Daerah Tingkat II Bandung dan kemudian diperbaharui melalui penetapan berdasarkan pada Peraturan Daerah  Nomor 6 Tahun 2006 tentang Pemekaran dan Pembentukan wilayah Kerja Kecamatan dan Kelurahan di Lingkungan Kota Bandung.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% comment %} Kata sambutan selesai {% endcomment %}
+
+    {% comment %} Bagian Live Video {% endcomment %}
+    <div class="live-video">
+        <div class="video">
+            <div class="row text-center">
+                <div class=col-lg-6>
+                    <div class="container videoframe video-box text-center">
+                    </div>
+                    <div class="container mt-1">
+                        <span class="badge">Siaran Langsung</span>
+                    </div>
+                </div>
+                <div class=col-lg-6>
+                    <div class="comment-core text-center">
+                        <div class="container comment"></div>
+                    </div>
+                    <div class="input-group mt-3">
+                    <input type="text" class="form-control" placeholder="Berikan Komentarmu .." aria-label="" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">Button</button>
+                    </div>
+                    </div>
+                    <span class="badge mt-3">komentar</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% comment %} Bagian Pertama {% endcomment %}
+        <div class="bagian1 bg-primary">
+            <div class="row">
+                {% comment %} Logo Depan Kantor {% endcomment %}
+                <div class="col-lg-8 col-md-8 col-sm-8" class="kantor-depan">
+                    <div class="container berita-card mt-3">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img src="{% static 'img/karnaval.jpg' %}" alt="" width="100%" height="50px" class="img-fluid img-thumbnail">
+                            </div>
+                            <div class="col-lg-4">
+                                <img src="{% static 'img/rangkaianacara.jpg' %}" alt="" width="100%" height="50px" class="img-fluid img-thumbnail">
+                            </div>
+                            <div class="col-lg-4">
+                                <img src="{% static 'img/buangsampah.jpg' %}" alt="" width="100%" height="50px" class="img-fluid img-thumbnail">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% comment %} List Header Berita {% endcomment %}
+                <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+                    <h6 class="mt-2">Kabar Terkini</h6>
+                    <div class="berita-list bg-white">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h5><a href="">Sosialisasi Gugus Tugas Hemat Energi dan Air</a></h5>
+                                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt alias iure voluptatibus maiores, et perspiciatis cum expedita veniam repellendus ipsam earum enim ad omnis, modi nostrum facilis fugiat recusandae. Repudiandae.</small>
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="">Apel Bersama Bulan Maret 2019</a></h5>
+                                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt alias iure voluptatibus maiores, et perspiciatis cum expedita veniam repellendus ipsam earum enim ad omnis, modi nostrum facilis fugiat recusandae. Repudiandae.</small>
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="">Pendidikan Politik Masyarakat</a></h5>
+                                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt alias iure voluptatibus maiores, et perspiciatis cum expedita veniam repellendus ipsam earum enim ad omnis, modi nostrum facilis fugiat recusandae. Repudiandae.</small>
+                            </li>
+                            <li class="list-group-item">
+                                <h5><a href="">Sosialisasi Gugus Tugas Hemat Energi dan Air</a></h5>
+                                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt alias iure voluptatibus maiores, et perspiciatis cum expedita veniam repellendus ipsam earum enim ad omnis, modi nostrum facilis fugiat recusandae. Repudiandae.</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% comment %} Bagian Pertama Selesai {% endcomment %}
+
+    {% comment %} Bagian Kedua {% endcomment %}
+    <div class="bagian2">
+        <div class="text-center">
+            <div class="container bagian1">
+                <h6>Layanan Publik</h6>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg">
+                    <a href="{% url 'layanan_publik:permohonanUsaha' %}"><div class="card menu-layanan">
+                        <span class="badge menu-layanan-badge bg-danger">BARU</span>
+                        <img src="{% static 'img/izindagang.jpg' %}" alt="" class="foto-menu">
+                        <div class="mt-2">
+                            <img src="{% static 'img/money.png' %}" alt="" class="icon-menu">
+                        </div>
+                        <div class="card-body">
+                            <h6>Permohonan Usaha</h6>
+                            <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus ducimus cupiditate aliquid ad voluptas dolores obcaecati similique recusandae? Repellat quos fugiat quidem consequatur dicta facere tempore laborum modi quibusdam nemo?</small>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col-lg">
+                    <div class="card menu-layanan">
+                        <img src="{% static 'img/izindagang.jpg' %}" alt="" class="foto-menu">
+                        <div class="mt-2">
+                            <img src="{% static 'img/boss.png' %}" alt="" class="icon-menu">
+                        </div>
+                        <div class="card-body">
+                            <h6>Permohonan SKCK</h6>
+                            <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus ducimus cupiditate aliquid ad voluptas dolores obcaecati similique recusandae? Repellat quos fugiat quidem consequatur dicta facere tempore laborum modi quibusdam nemo?</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <a href="{% url 'layanan_publik:administrasi' %}"><div class="card menu-layanan">
+                        <img src="{% static 'img/izindagang.jpg' %}" alt="" class="foto-menu">
+                        <div class="mt-2">
+                            <img src="{% static 'img/planning.png' %}" alt="" class="icon-menu">
+                        </div>
+                        <div class="card-body">
+                            <h6>Administrasi Penduduk</h6>
+                            <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus ducimus cupiditate aliquid ad voluptas dolores obcaecati similique recusandae? Repellat quos fugiat quidem consequatur dicta facere tempore laborum modi quibusdam nemo?</small>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col-lg">
+                    <a href="{% url 'layanan_publik:perizinanIndex' %}"><div class="card menu-layanan">
+                        <span class="badge menu-layanan-badge bg-danger">BARU</span>
+                        <img src="{% static 'img/izindagang.jpg' %}" alt="" class="foto-menu">
+                        <div class="mt-2">
+                            <img src="{% static 'img/permission.png' %}" alt="" class="icon-menu">
+                        </div>
+                        <div class="card-body">
+                            <h6>Perizinan Online</h6>
+                            <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus ducimus cupiditate aliquid ad voluptas dolores obcaecati similique recusandae? Repellat quos fugiat quidem consequatur dicta facere tempore laborum modi quibusdam nemo?</small>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+            <hr>
+            <div class="container mt-4">
+                <a href=""><h6>Lihat lebih banyak lagi</h6>
+                <i class="material-icons">keyboard_arrow_down</i></a>
+            </div>
+        </div>
+    </div>
+    {% comment %} Bagian Kedua Selesai {% endcomment %}
+
+    {% comment %} Bagian Ketiga {% endcomment %}
+    <div class="bagian3 bg-primary text-center">
+        <div class="container bagian1">
+            <h6 class="mt-4">Info Kecamatan</h6>
+        </div>
+        <hr>
+        <div class="container menu-info mt-3 text-center">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Cari Info Seputar Kecamatan Sumur Bandung" aria-label="cari-info" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-warning text-white" type="button">Cari</button>
+                </div>
+            </div>
+            <div class="row">
+
+                {% comment %} Info 1 {% endcomment %}
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="bagian2">
+                            <img src="{% static 'img/teamwork.png' %}" alt="" class="icon-menu">
+                        </div>
+                        <h5>Pegawai Kecamatan</h5>
+                    </div>
+                    <div class="card">
+                        <div class="bagian2">
+                            <img src="{% static 'img/test.png' %}" alt="" class="icon-menu">
+                        </div>
+                        <h5>SAKIP</h5>
+                    </div>
+                    <div class="card">
+                        <div class="bagian2">
+                            <img src="{% static 'img/teamwork.png' %}" alt="" class="icon-menu">
+                        </div>
+                        <h5>Pegawai Kelurahan</h5>
+                    </div>
+                </div>
+
+                {% comment %} Info 2 {% endcomment %}
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="bagian2">
+                            <img src="{% static 'img/population.png' %}" alt="" class="icon-menu">
+                        </div>
+                        <h5>Jumlah Penduduk</h5>
+                    </div>
+                    <div class="card">
+                        <div class="bagian2">
+                            <img src="{% static 'img/company.svg' %}" alt="" class="icon-menu">
+                        </div>
+                        <h5>Daftar Perusahaan</h5>
+                    </div>
+                    <div class="card">
+                        <div class="bagian2">
+                            <img src="{% static 'img/store.svg' %}" alt="" class="icon-menu">
+                        </div>
+                        <h5>Daftar UMKM</h5>
+                    </div>
+                </div>
+
+                {% comment %} Info 3 {% endcomment %}
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="bagian2">
+                            <img src="{% static 'img/house.svg' %}" alt="" class="icon-menu">
+                        </div>
+                        <h5>Data Perumahan</h5>
+                    </div>
+                    <div class="card">
+                        <div class="bagian2">
+                            <img src="{% static 'img/value.svg' %}" alt="" class="icon-menu">
+                        </div>
+                        <h5>Fasilitas Umum</h5>
+                    </div>
+                    <div class="card">
+                        <div class="bagian2">
+                            <img src="{% static 'img/website.svg' %}" alt="" class="icon-menu">
+                        </div>
+                        <h5>Profile Kecamatan</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% comment %} Bagian Ketiga Selesai {% endcomment %}
+    <div class="bg-dark text-center">
+        <div class="bagian1">
+            <h6 class="mt-2">GALERI</h6>
+        </div>
+        <hr>
+        <div class="foto">
+           <h5>Hello</h5>
+        </div>
+    </div>
+
+    <div class="bagianfooter bg-primary">
+        <div class="container">
+            <div class="row text-center">
+
+                {% comment %} Alamat {% endcomment %}
+                <div class="col-lg-4">
+                    <div class="bagian1 text-white">
+                        <h6>Alamat</h6><hr>
+                        <div class="peta">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8137654982406!2d107.61785868063788!3d-6.912857759883902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e634ffb4c86d%3A0x2d5e69bb1a8aedcb!2sKantor+Kecamatan+Sumur+Bandung!5e0!3m2!1sid!2sid!4v1560320123593!5m2!1sid!2sid" width="400" height="225" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <small>Jl. Lombok No.6, Sumurbandung, Merdeka, Kec. Sumur Bandung, Kota Bandung, Jawa Barat 40113</small>
+                    </div>
+                </div>
+                
+                {% comment %} Motto dan Logo {% endcomment %}
+                <div class="col-lg-4 text-white">
+                    <img src="{% static 'img/logobandung.png' %}" alt="">
+                    <P class="mt-3">KECAMATAN SUMUR BANDUNG</P>
+                    <h6>PEMERINTAH KOTA BANDUNG</h6>
+                    <H6>PROVINSI JAWA BARAT</H6>
+                </div>
+                
+                {% comment %} Kontak dan Media Sosial {% endcomment %}
+                <div class="col-lg-4">
+                    <div class="bagian1 text-white">
+                        <h6>Kontak dan Media Sosial</h6>
+                        <div class="kontak mt-4">
+                            <p>Telp/Fax : 022-4205668</p>
+                            <hr>
+                            <p>Email : kec.surban@bandung.go.id</p>
+                            <hr>
+                            <p>Pengaduan : 0857 4574 3888</p>
+                        </div>
+                        <hr>
+                        <div class="media-sosial">
+                            <p>Ikuti Kami :</p>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="bagian2 bg-transparent">
+                                        <a href="https://www.facebook.com/kecsurban/"><img src="{% static 'img/facebook.svg' %}" alt="" class="icon-menu"></a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="bagian2 bg-transparent">
+                                        <a href="https://twitter.com/kec_surban"><img src="{% static 'img/twitter.svg' %}" alt="" class="icon-menu"></a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="bagian2 bg-transparent">
+                                        <a href="https://www.instagram.com/surban_nanjung/"><img src="{% static 'img/instagram.svg' %}" alt="" class="icon-menu"></a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="bagian2 bg-transparent">
+                                        <a href="#"><img src="{% static 'img/youtube.svg' %}" alt="" class="icon-menu"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock konten1 %}
+
+
+{% block addScripts %}
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <script>
+        $(window).ready(function(){
+            const videoLive = $('.videoframe')
+            fetch('https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UC5BMIWZe9isJXLZZWPWvBlg&eventType=live&type=video&key=AIzaSyCbTFYGJfj1J64VAqBnvQlOjb31ILMY980&part=snippet,statistics')
+            .then(data=>data.json())
+            .then(json=>{
+                videoLive.append(
+                    `
+                    <iframe width="100%" height="300px" src="https://www.youtube.com/embed/live_stream?channel=${json['items'][0]['snippet']['channelId']}" frameborder="0" allowfullscreen></iframe>
+                    `
+                )
+            })
+        });
+    </script>
+
+    <script>
+        $(window).ready(function(){
+            const commentFrame=$('.comment')
+
+            fetch('https://www.googleapis.com/youtube/v3/liveChat/messages?part=snippet,authorDetails&liveChatId=Cg0KCzk0UXpISnNpTUxJ&maxResults=200&access_token=ya29.GlstB_1FquUB0jCZLNCd5LwGthyJeKLsLDnH7D6pXOWpt_sJzWfe7FpTtCTtgS3gnOAyBdWkEj43oWHQ3M1pkTfKhLwJcuxbWYW2Ozm6S-_ri__kRPTyKfGH4ZEY')
+            .catch(err=>{
+                console.log(err)
+            })
+            .then(data=>data.json())
+            .then(json=>{
+                for(var i=0;i < json['items'].length;i++){
+                    commentFrame.append(
+                        `
+                        <div class="container bg-primary mb-2" style="padding:10px">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="${json['items'][i]['authorDetails']['profileImageUrl']}" width=50px height=50px style="border-radius:50%">
+                                    <br>
+                                    <small>${json['items'][i]['authorDetails']['displayName']}</small>
+                                </div>
+                                <div class="col-lg-8">
+                                    <p>${json['items'][i]['snippet']['textMessageDetails']['messageText']}</p>
+                                </div>
+                            </div>
+                        </div>
+                        `
+                    )
+                }
+            })
+        });
+    </script>
+{% endblock addScripts %}
+    

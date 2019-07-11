@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block addStyles %}
+    <link rel="stylesheet" href="{% static 'css/layanan_publik/index.css' %}">
+{% endblock addStyles %}
+    
+
+{% block konten1 %}
+<div class="menu-layanan bg-primary text-center">
+    <div class="container">
+            <div class="bagian1">
+                    <h6 class="mt-4">Pelayanan Kecamatan</h6>
+                </div>
+                <hr>
+                <div class="menu-info mt-3 text-center">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Usulkan layanan yang ingin kamu rekomendasikan" aria-label="cari-info" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-warning text-white" type="button">Kirim</button>
+                        </div>
+                    </div>
+                    <div class="row">
+            
+                        {% comment %} Info 1 {% endcomment %}
+                       <div class="col-lg-6">
+                        <a href="{% url 'layanan_publik:administrasi' %}">
+                            <div class="card">
+                                <div class="bagian2">
+                                    <img src="{% static 'img/teamwork.png' %}" alt="" class="icon-menu">
+                                </div>
+                                <h5>Administrasi Kependudukan</h5>
+                            </div>
+                        </a>
+                        </div>
+            
+                        {% comment %} Info 2 {% endcomment %}
+                        <div class="col-lg-6">
+                            <a href="{% url 'layanan_publik:perizinanIndex' %}">
+                                <div class="card">
+                                    <div class="bagian2">
+                                        <img src="{% static 'img/checklist.svg' %}" alt="" class="icon-menu">
+                                    </div>
+                                    <h5>Perizinan</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</div>
+{% endblock konten1 %}
+    

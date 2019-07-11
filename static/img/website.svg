@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve">
+<g>
+	<path style="fill:#B3D5E4;" d="M440,8H40C22.328,8,8,22.328,8,40v320c0,17.672,14.328,32,32,32h128h144h128
+		c17.672,0,32-14.328,32-32V40C472,22.328,457.672,8,440,8z M200,360h80H200z M440,328H40V40h400V328z"/>
+	<polygon style="fill:#B3D5E4;" points="48,440 8,472 472,472 432,440 352,440 128,440 	"/>
+	<polygon style="fill:#B3D5E4;" points="128,440 352,440 312,392 168,392 	"/>
+</g>
+<path style="fill:#E4D9B3;" d="M40,328h400V40H40V328z M208,296H96v-32h112V296z M376,256h40H376z M320,224h96H320z M376,192h40H376
+	z M328,160h88H328z M320,120h48H320z M400,96H288H400z M312,160h-40H312z M360,192h-88H360z M304,224h-32H304z M360,256h-88H360z
+	 M80,232V88h72v32h80v112h16h-16h-24h-32h-24H80H64H80z"/>
+<g>
+	<path style="fill:#D45B5B;" d="M152,120V88H80v144h72V120z M96,208h16H96z M96,184h16H96z M96,160h16H96z M96,136h16H96z M96,112
+		h16H96z M120,208h16H120z M120,184h16H120z M120,160h16H120z M120,136h16H120z M120,112h16H120z"/>
+	<path style="fill:#D45B5B;" d="M176,232v-40h32v40h24V120h-80v112H176z M224,144h-16H224z M224,168h-16H224z M200,144h-16H200z
+		 M200,168h-16H200z M176,144h-16H176z M176,168h-16H176z"/>
+	<rect x="176" y="192" style="fill:#D45B5B;" width="32" height="40"/>
+	<rect x="96" y="264" style="fill:#D45B5B;" width="112" height="32"/>
+</g>
+<g>
+	<path style="fill:#23374E;" d="M440,0H40C17.944,0,0,17.944,0,40v320c0,22.056,17.944,40,40,40h110.912l-26.664,32H48
+		c-1.824,0-3.576,0.616-5,1.752l-40,32c-2.648,2.128-3.672,5.696-2.544,8.896S4.6,480,8,480h464c3.4,0,6.424-2.152,7.544-5.352
+		s0.104-6.776-2.544-8.896l-40-32c-1.424-1.136-3.176-1.752-5-1.752h-76.248l-26.664-32H440c22.056,0,40-17.944,40-40V40
+		C480,17.944,462.056,0,440,0z M449.192,464H30.808l20-16H128h224h77.192L449.192,464z M334.92,432H145.08l26.672-32h136.504
+		L334.92,432z M464,360c0,13.232-10.768,24-24,24H312H168H40c-13.232,0-24-10.768-24-24V40c0-13.232,10.768-24,24-24h400
+		c13.232,0,24,10.768,24,24V360z"/>
+	<path style="fill:#23374E;" d="M440,32H40c-4.424,0-8,3.576-8,8v288c0,4.424,3.576,8,8,8h400c4.424,0,8-3.576,8-8V40
+		C448,35.576,444.424,32,440,32z M432,320H48V48h384V320z"/>
+	<rect x="200" y="352" style="fill:#23374E;" width="80" height="16"/>
+	<path style="fill:#23374E;" d="M152,240h24h32h24h16v-16h-8V120c0-4.424-3.576-8-8-8h-72V88c0-4.424-3.576-8-8-8H80
+		c-4.424,0-8,3.576-8,8v136h-8v16h16H152z M184,224v-24h16v24H184z M224,128v8h-16v16h16v8h-16v16h16v48h-8v-32c0-4.424-3.576-8-8-8
+		h-32c-4.424,0-8,3.576-8,8v32h-8v-48h16v-16h-16v-8h16v-16h-16v-8H224z M88,96h56v24v104H88V96z"/>
+	<rect x="96" y="104" style="fill:#23374E;" width="16" height="16"/>
+	<rect x="120" y="104" style="fill:#23374E;" width="16" height="16"/>
+	<rect x="184" y="136" style="fill:#23374E;" width="16" height="16"/>
+	<rect x="184" y="160" style="fill:#23374E;" width="16" height="16"/>
+	<rect x="96" y="128" style="fill:#23374E;" width="16" height="16"/>
+	<rect x="120" y="128" style="fill:#23374E;" width="16" height="16"/>
+	<rect x="96" y="152" style="fill:#23374E;" width="16" height="16"/>
+	<rect x="120" y="152" style="fill:#23374E;" width="16" height="16"/>
+	<rect x="96" y="176" style="fill:#23374E;" width="16" height="16"/>
+	<rect x="120" y="176" style="fill:#23374E;" width="16" height="16"/>
+	<rect x="96" y="200" style="fill:#23374E;" width="16" height="16"/>
+	<rect x="120" y="200" style="fill:#23374E;" width="16" height="16"/>
+	<rect x="288" y="88" style="fill:#23374E;" width="112" height="16"/>
+	<rect x="320" y="112" style="fill:#23374E;" width="48" height="16"/>
+	<path style="fill:#23374E;" d="M208,256H96c-4.424,0-8,3.576-8,8v32c0,4.424,3.576,8,8,8h112c4.424,0,8-3.576,8-8v-32
+		C216,259.576,212.424,256,208,256z M200,288h-96v-16h96V288z"/>
+	<rect x="328" y="152" style="fill:#23374E;" width="88" height="16"/>
+	<rect x="272" y="152" style="fill:#23374E;" width="40" height="16"/>
+	<rect x="376" y="184" style="fill:#23374E;" width="40" height="16"/>
+	<rect x="272" y="184" style="fill:#23374E;" width="88" height="16"/>
+	<rect x="320" y="216" style="fill:#23374E;" width="96" height="16"/>
+	<rect x="272" y="216" style="fill:#23374E;" width="32" height="16"/>
+	<rect x="376" y="248" style="fill:#23374E;" width="40" height="16"/>
+	<rect x="272" y="248" style="fill:#23374E;" width="88" height="16"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>

@@ -1,0 +1,28 @@
+{% load static %}
+
+<nav class="navbar navbar-light bg-primary">
+    <div class="container">
+        <!-- Menu sebelah kiri -->
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="menu-kiri text-center">  
+                <a href="{% url 'home' %}">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <img src="{% static 'img/logobandung.png' %}" alt="" class="logo">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <span class="navbar-brand mb-0 h1 text-white">Kecamatan Sumur Bandung</span>
+                            <br>
+                            <small class="text-white">Pemerintah Kota Bandung</small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Menu sebelah kiri -->
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="menu-kanan text-center">  
+            </div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,20 @@
+html{
+    background-color: #007bff
+}
+
+div.administrasi-ktp{
+    background-color: #007bff
+}
+    div.administrasi-ktp div.container{
+        background-color:whitesmoke;
+        padding: 15px;
+        border-radius: 10
+    }
+
+div.list-orang{
+    background-color: #007bff;
+}
+    div.list-orang div.container{
+        background-color:whitesmoke;
+        padding: 15px;
+    }
